@@ -1,0 +1,7 @@
+    <div><a href="/profile" id="profile">profile data from tile rendered on server</a></div>
+    <div><a href="/profile2" id="profile2">profile data from json and using handlebars already on the page to render</a></div>
+    <div id="results" style="border:1px solid red">
+        {{#each results}}
+            {{> partials/list-item}}
+        {{/each}}
+    </div>

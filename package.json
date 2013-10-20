@@ -1,0 +1,26 @@
+{
+  "name": "sowa-search",
+  "description": "sowa search demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "3.4.0",
+    "nconf": "0.6.7",
+    "sowa-shared": "git://github.com/sethbroomer/sowa-shared.git#master",
+    "log4js": "0.6.9"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "colors": "*",
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-cafe-mocha": "~0.1.9"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "main": "app.js",
+  "readmeFilename": "README.md"
+}

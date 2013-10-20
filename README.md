@@ -1,2 +1,2 @@
-webservice-search
+sowa-search
 =================
