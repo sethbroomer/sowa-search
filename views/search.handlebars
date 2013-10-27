@@ -1,5 +1,8 @@
-{{> partials/nav}}
 
 <div id="cont">
-    {{> search}}
+    {{> search/templates/nav}}
+
+    <div id="results" style="border:1px solid red">
+        {{> search/templates/search}}
+    </div>
 </div>

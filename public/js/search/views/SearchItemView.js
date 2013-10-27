@@ -5,7 +5,7 @@
     SOWA.Search.SearchItemView = Backbone.View.extend({
 
         render: function() {
-            var template        = Handlebars.templates['list-item'],
+            var template        = Handlebars.templates['search/list-item'],
                 templateData    = this.getTemplateData();
 
             this.$el.html(template(templateData));

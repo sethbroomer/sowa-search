@@ -2,11 +2,9 @@
     "env": "development",
     "node_port": "3000",
     "app_name" : "search",
+    "static_url": "//local.m.servername.com/",
     "services" : {
         "defaults": {
-            "url" : "http://local.m.servername.com/test-data"
-        },
-        "search" : {
             "url" : "http://local.m.servername.com/test-data"
         }
     },

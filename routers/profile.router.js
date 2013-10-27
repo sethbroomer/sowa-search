@@ -15,6 +15,7 @@ module.exports = function(app) {
 //             res.smartRender(200,'search', body);
 
             };
+        profileModel.setPage(req.query.p || 1);
 
         profileModel.load(profileResponse);
 
