@@ -2,7 +2,7 @@
     "use strict";
     SOWA.Search = SOWA.Search || {};
 
-    SOWA.Search.SearchView = Backbone.View.extend({
+    SOWA.Search.SearchView = SOWA.Backbone.BaseView.extend({
         el: 'body',
 
         events: {

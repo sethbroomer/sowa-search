@@ -2,7 +2,7 @@
     "use strict";
     SOWA.Search = SOWA.Search || {};
 
-    SOWA.Search.SearchCollection = Backbone.Collection.extend({
+    SOWA.Search.SearchCollection = SOWA.Backbone.BaseCollection.extend({
         model: SOWA.Search.SearchItemModel,
         
         url: function() {

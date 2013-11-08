@@ -2,7 +2,7 @@
     "use strict";
     SOWA.Search = SOWA.Search || {};
 
-    SOWA.Search.SearchItemView = Backbone.View.extend({
+    SOWA.Search.SearchItemView = SOWA.Backbone.BaseView.extend({
 
         render: function() {
             var template        = Handlebars.templates['search/list-item'],

@@ -3,22 +3,16 @@ sowa-search
 TODO
 
 SMALL
-Make a regular expression to see if a (inline script) has been loaded if it has, then do not reload the inline script
-Move ScriptManager to its own file and not be in utils.
 
 fix reading config from command line
 backbone parse should i even use it since it fires using events?
 promises
 Add templating for css
 
-Get page via ajax ...all but the frame
-get a tile via ajax including javascript
 
-In backbone make these 2 functions
-    getTile
-    getPage
-        each one will wrap up the process events
-        error handlign for smart render
+
+error handling for smart render
+cache busting of scripts
 
 LARGE
 localization

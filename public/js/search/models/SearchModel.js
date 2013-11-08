@@ -2,40 +2,30 @@
     "use strict";
     SOWA.Search = SOWA.Search || {};
 
-    SOWA.Search.SearchModel = Backbone.Model.extend({
+    SOWA.Search.SearchModel = SOWA.Backbone.BaseModel.extend({
 
         url : '/profile',
 
         getProfile: function() {
             var that = this;
-            $.ajax({
+            this.fetchTile({
                 url: this.url,
-                headers: {
-                    "x-request-type":'tile'
-                },
                 success: function(data) {
-                    var next = function(processedData) {
-                        that.trigger('profile:success', processedData);
-                    };
-
-                    SOWA.ScriptManager.processScripts(data, next);
+                    debugger;
+                    that.trigger('profile:success', data);
                 }
+
             });
+
         },
         getProfileFull: function() {
             var that = this;
-            $.ajax({
-                url: this.url,
-                headers: {
-                    "x-request-type":'page'
-                },
+            this.fetchPage({
                 success: function(data) {
-                    var next = function(processedData) {
-                        that.trigger('profile:success-full', processedData);
-                    };
-
-                    SOWA.ScriptManager.processScripts(data, next);
+                    debugger;
+                    that.trigger('profile:success-full', data);
                 }
+
             });
         },
         getSearchFull: function() {
